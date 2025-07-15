@@ -1,0 +1,17 @@
+import React from 'react'
+import { useState } from "react";
+
+function Product() {
+    var title = useState(title);
+  return (
+    <div className='bg-gray-100 h-[400px] w-[400px]  rounded-2xl flex flex-col items-center justify-center p-4 shadow-lg'>
+<img src="https://imgs.search.brave.com/BgVYuVuanWEyjsfm1q9At8Ks5dBjrtfIt41XhfxALZA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/Y25ldC5jb20vYS9p/bWcvcmVzaXplL2Jk/ZTFiOGNhMWI5Mzcz/YjYxYmJmOWQzZTEx/M2E4MWFjNzYyOTdi/NTEvaHViLzIwMjQv/MDkvMTMvMGRmMzA3/NDQtYTMzZi00YzZl/LWI1OGMtYTkwZDdh/OTE0MDg5L2FwcGxl/LWlwaG9uZS0xNi0y/ODE1LmpwZz9hdXRv/PXdlYnAmaGVpZ2h0/PTUwMA" alt="" className="w-[350px] h-[300px] rounded-2xl" />
+        <h2 className='text-2xl font-bold'>{title}</h2>
+        <p className='text-gray-600'>Product description goes here.</p>
+        <h1>{a}</h1>
+        <button onClick={() => b(a+1)} className='mt-4 bg-blue-500 text-white py-2 px-4 rounded'>Add to Cart</button>
+    </div>
+  )
+}
+
+export default Product
