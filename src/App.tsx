@@ -1,12 +1,8 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Product from "./product";
 
 function App() {
   
-  const [count, setCount] = useState(0);
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
@@ -27,22 +23,14 @@ function App() {
           earum nisi soluta veniam, id consequuntur!
         </div>
       </div>
-      <div className="flex  w-screen gap-2 p-4">
-         <Product title="iphone 16 pro max" storage="256GB" color="Space Gray" />
-         <Product title="iphone 16 pro max" storage="256GB" color="Space Gray" />
-         <Product title="iphone 16 pro max" storage="256GB" color="Space Gray" />
-         <Product title="iphone 16 pro max" storage="256GB" color="Space Gray" />
-         <Product title="iphone 16 pro max" storage="256GB" color="Space Gray" />
+      <div className="flex w-screen gap-2 p-4">
+        <Product title="iPhone 16" />
+        <Product title="iPhone 16 Pro" />
+        <Product title="iPhone 16 Pro Max" />
+        <Product title="iPhone 16 Mini" />
       </div>
     </div>
   );
 }
 
 export default App;
-product title : {
-  iphone 16 pro max
-  <br />
-  256GB Storage
-  <br />
-  Space Gray
-}
