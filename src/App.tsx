@@ -23,8 +23,10 @@ function App() {
           earum nisi soluta veniam, id consequuntur!
         </div>
       </div>
+       <h1 className="text-4xl text-left text-blue-950 font-semibold mb-4">Iphones</h1>
       <div className="flex w-screen gap-2 p-4">
-        <Product title="iPhone 16" />
+        
+        <Product title="iPhone 16"  />
         <Product title="iPhone 16 Pro" />
         <Product title="iPhone 16 Pro Max" />
         <Product title="iPhone 16 Mini" />
