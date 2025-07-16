@@ -15,11 +15,15 @@ const Product: React.FC<ProductProps> = ({ title }) => {
         alt={title}
         className="w-[350px] h-[300px] rounded-2xl"
       />
-      <h2 className="text-2xl font-bold">{title}</h2>
+      <h2 id="title" className="text-2xl font-bold">{title}</h2>
       <p className="text-gray-600">Product description goes here.</p>
-      <h1>{count}</h1>
+     <div className="flex  flex-row gap-2">
+       <button onClick={() => setCount(count - 1>0 ? count - 1 : 0)} className="text-2xl">-</button>
+      <h1 className="text-2xl">{count}</h1>
+      <button onClick={() => setCount(count + 1>10 ? 10 : count + 1)}  className="text-2xl">+</button>
+     </div>
       <button
-        onClick={() => setCount(count + 1)}
+        onClick={() => alert("Product added to cart!")}
         className="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
       >
         Add to Cart
