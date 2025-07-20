@@ -1,9 +1,14 @@
 import "./App.css";
 import Product from "./product";
 
+
+import Loginbtn from "./Component/Loginbtn";
+import Logoutbtn from "./Component/Logoutbtn";
+import { useState } from "react";
+
 function App() {
   
-
+const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
       <h1 className="text-3xl font-bold text-blue-500">
@@ -30,6 +35,11 @@ function App() {
         <Product title="iPhone 16 Pro" />
         <Product title="iPhone 16 Pro Max" />
         <Product title="iPhone 16 Mini" />
+      </div>
+      <div>
+        <h1 className="text-4xl text-left text-blue-950 font-semibold mb-4">wellcome ser</h1>
+        <div>{isLoggedIn ? <Logoutbtn /> : <Loginbtn />}</div>
+        
       </div>
     </div>
   );

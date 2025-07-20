@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 interface ProductProps {
   title: string;
@@ -6,6 +6,9 @@ interface ProductProps {
 
 const Product: React.FC<ProductProps> = ({ title }) => {
   const [count, setCount] = useState<number>(0);
+  useEffect(() => {
+     
+  })
 
   return (
     <div className="bg-gray-100 h-[400px] w-[400px] rounded-2xl flex flex-col items-center justify-center p-4 shadow-lg">
@@ -17,13 +20,16 @@ const Product: React.FC<ProductProps> = ({ title }) => {
       />
       <h2 id="title" className="text-2xl font-bold">{title}</h2>
       <p className="text-gray-600">Product description goes here.</p>
+      <div className="prize">
+        <h3 className="text-xl font-semibold">$100.01</h3>
+      </div>
      <div className="flex  flex-row gap-2">
        <button onClick={() => setCount(count - 1>0 ? count - 1 : 0)} className="text-2xl">-</button>
       <h1 className="text-2xl">{count}</h1>
       <button onClick={() => setCount(count + 1>10 ? 10 : count + 1)}  className="text-2xl">+</button>
      </div>
       <button
-        onClick={() => alert("Product added to cart!")}
+        onClick={() => alert(`${title}` + "Successfully  added into cart")}
         className="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
       >
         Add to Cart
